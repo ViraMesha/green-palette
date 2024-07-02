@@ -1,0 +1,45 @@
+:root {
+  /* fonts */
+
+  /* text-colors */
+  --main-txt-cl: #0c3e2e;
+
+  /* bg-colors */
+
+  /* others */
+}
+
+body {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--main-txt-cl);
+}
+
+.container {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*
+  |==============================
+  | HEADER
+  |==============================
+*/
+.header__top {
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.menu__link {
+  text-transform: uppercase;
+  color: var(--main-txt-cl);
+}
