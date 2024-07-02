@@ -10,10 +10,14 @@
 }
 
 body {
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: var(--main-txt-cl);
 }
+
+/* font-family: "Kaisei Decol", sans-serif;
+font-family: "Balsamiq Sans", sans-serif; */
 
 .container {
   max-width: 1230px;
