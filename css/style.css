@@ -39,7 +39,7 @@ font-family: "Balsamiq Sans", sans-serif; */
   background-position: top center;
 }
 
-.header__top {
+.header-top {
   padding-top: 32px;
   display: flex;
   justify-content: space-between;
