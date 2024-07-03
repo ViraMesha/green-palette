@@ -3,6 +3,7 @@
 
   /* text-colors */
   --main-txt-cl: #0c3e2e;
+  --secondary-txt-cl: #bb8a52;
 
   /* bg-colors */
 
@@ -31,6 +32,13 @@ font-family: "Balsamiq Sans", sans-serif; */
   | HEADER
   |==============================
 */
+
+.header {
+  background-image: url("../images/header-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
 .header__top {
   padding-top: 32px;
   display: flex;
@@ -46,4 +54,8 @@ font-family: "Balsamiq Sans", sans-serif; */
 .menu__link {
   text-transform: uppercase;
   color: var(--main-txt-cl);
+}
+
+.phone {
+  color: var(--secondary-txt-cl);
 }
