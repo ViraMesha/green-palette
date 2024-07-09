@@ -183,3 +183,55 @@ body {
   font-size: 48px;
   font-weight: 600;
 }
+
+/*
+  |==============================
+  | WHY
+  |==============================
+*/
+
+.why {
+  margin-bottom: 150px;
+}
+
+.why__text {
+  max-width: 583px;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+.why__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 33px;
+}
+.why__img {
+}
+.why__list {
+  font-weight: 600;
+  font-size: 28px;
+  list-style-type: none;
+  counter-reset: my-counter;
+}
+
+.why__item::before {
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  padding-right: 11px;
+}
+
+.why__item:not(:last-child) {
+  margin-bottom: 55px;
+}
+/* .why__item + .why__item {
+  margin-top: 55px;
+} */
+
+.why__item.pl--70 {
+  padding-left: 70px;
+}
+
+.why__item.pl--103 {
+  padding-left: 103px;
+}
