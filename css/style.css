@@ -9,7 +9,7 @@
   --secondary-txt-cl: #bb8a52;
 
   /* bg-colors */
-  --btn-bg-color: #ffba00;
+  --accent-bg-color: #ffba00;
 
   /* others */
 }
@@ -35,6 +35,11 @@ body {
   margin-bottom: 50px;
 }
 
+.subtitle {
+  font-weight: 600;
+  font-size: 28px;
+}
+
 /*
   |==============================
   | HEADER
@@ -42,7 +47,7 @@ body {
 */
 
 .header {
-  background-image: url("../images/header-bg.svg");
+  background-image: url("../images/header/header-bg.svg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
@@ -114,7 +119,7 @@ body {
 .header-content__btn {
   display: inline-block;
   padding: 20px 38.5px;
-  background-color: var(--btn-bg-color);
+  background-color: var(--accent-bg-color);
   font-size: 20px;
   margin-top: 50px;
 }
@@ -196,8 +201,6 @@ body {
 
 .why__text {
   max-width: 583px;
-  font-weight: 600;
-  font-size: 28px;
   margin-bottom: 40px;
 }
 .why__content {
@@ -234,4 +237,38 @@ body {
 
 .why__item.pl--103 {
   padding-left: 103px;
+}
+
+/*
+  |==============================
+  | PROJECTS
+  |==============================
+*/
+
+.projects {
+  margin-bottom: 120px;
+}
+.projects__text {
+  max-width: 593px;
+  margin-bottom: 30px;
+}
+.gallery-projects {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.gallery__item {
+  grid-area: span 2;
+}
+
+.gallery-projects__text {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.gallery-projects__img {
+  border-radius: 40px;
+  border: 1px solid var(--accent-bg-color);
 }
