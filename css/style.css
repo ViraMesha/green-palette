@@ -272,3 +272,29 @@ body {
   border-radius: 40px;
   border: 1px solid var(--accent-bg-color);
 }
+
+/*
+  |==============================
+  | SERVICES
+  |==============================
+*/
+
+.services {
+  margin-bottom: 150px;
+}
+
+.services__subtitle {
+  margin-bottom: 30px;
+}
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.services__item {
+}
+.services__img {
+}
+.services__text {
+}
