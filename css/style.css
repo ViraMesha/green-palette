@@ -295,6 +295,8 @@ body {
 .services__item {
 }
 .services__img {
+  margin-bottom: 20px;
 }
 .services__text {
+  font-size: 24px;
 }
