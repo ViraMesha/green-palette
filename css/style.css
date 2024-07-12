@@ -291,12 +291,80 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 0 25px;
+  text-align: center;
 }
-.services__item {
-}
+
 .services__img {
   margin-bottom: 20px;
 }
 .services__text {
   font-size: 24px;
+}
+
+/*
+  |==============================
+  | PRICES
+  |==============================
+*/
+
+.prices {
+  margin-bottom: 150px;
+}
+
+.prices__subtitle {
+  max-width: 729px;
+  margin-bottom: 50px;
+}
+.prices__box {
+  display: flex;
+  justify-content: space-between;
+  gap: 21px;
+}
+.prices__list {
+  width: 100%;
+  text-align: center;
+  padding: 60px 34px 88px;
+  border: 2px solid var(--accent-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.prices__item {
+  max-width: 442px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.prices-item__title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.prices-item__services {
+  font-size: 24px;
+}
+.prices-item__services:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.sum {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 62px;
+  margin-top: auto;
+}
+
+.sum sup {
+  vertical-align: super;
+  font-size: 15px;
+}
+
+.prices__item-btn {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--accent-bg-color);
+  font-size: 20px;
 }
