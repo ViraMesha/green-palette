@@ -412,3 +412,43 @@ body {
   position: absolute;
   left: 0;
 }
+
+/*
+  |==============================
+  | TEAM
+  |==============================
+*/
+
+.team {
+  margin-bottom: 150px;
+}
+
+.team__subtitle {
+  max-width: 623px;
+  margin-bottom: 84px;
+}
+
+.team__inner {
+}
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  text-align: center;
+  justify-content: center;
+}
+.team__item {
+}
+.team-item {
+  max-width: 200px;
+}
+.team-item__img {
+  border: 1px solid var(--accent-bg-color);
+}
+
+.team-item__name {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.team-item__subscription {
+}
