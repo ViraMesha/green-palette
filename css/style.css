@@ -422,9 +422,10 @@ body {
   font-weight: 400;
   color: rgba(109, 151, 115, 0.2);
   stroke: 0.25 solid var(--main-txt-cl);
-  letter-spacing: -12px;
+  letter-spacing: -8px;
   position: absolute;
   left: 0;
+  -webkit-text-stroke: 1px rgb(109, 151, 115);
 }
 
 /*
