@@ -7,3 +7,10 @@ const swiper = new Swiper(".swiper", {
   },
   loop: true,
 });
+
+const menuBtn = document.querySelector(".menu__btn");
+const menuList = document.querySelector(".menu__list");
+
+menuBtn.addEventListener("click", () => {
+  menuList.classList.toggle("menu--open");
+});
