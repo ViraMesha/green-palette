@@ -33,6 +33,23 @@
             />
           </a>
           <nav class="menu">
+            <button class="menu__btn">
+              <svg
+                width="70"
+                height="60"
+                viewBox="0 0 70 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.6667 15H58.3333M11.6667 30H58.3333M11.6667 45H58.3333"
+                  stroke="#0C3E2E"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
             <ul class="menu__list">
               <li class="menu__item">
                 <a href="#" class="menu__link">Про нас</a>
@@ -62,27 +79,39 @@
               <h1 class="header-content__title">
                 Реалізуйте Ваші зелені мрії з нами
               </h1>
-              <p class="header-content__text">
+              <p class="header-content__text header-content__text-desc">
                 Почніть ваше ландшафтне втілення з нами та отримайте перший рік
                 обслуговування абсолютно
                 <span class="header-content__text header-content__text--red"
                   >безкоштовно!</span
                 >
               </p>
-              <a href="#" class="header-content__btn">Замовити проект</a>
+              <a href="#" class="header-content__btn header-content__btn-desc"
+                >Замовити проект</a
+              >
             </div>
             <img
               class="header-content__img"
               src="/images/header/header-top.png"
               alt="Сад"
             />
+            <p class="header-content__text header-content__text-mob">
+              Oтримайте перший рік обслуговування абсолютно
+              <span class="header-content__text header-content__text--red"
+                >безкоштовно!</span
+              >
+            </p>
+            <a href="#" class="header-content__btn header-content__btn-mob"
+              >Замовити проект</a
+            >
           </div>
         </div>
         <p class="header__text">Садова магія кожного сезону</p>
       </div>
     </header>
-    <main class="main">
-      <section class="about">
+
+    <!-- <main class="main">
+      <section class="about section-mb">
         <div class="container">
           <h2 class="title">Про нас</h2>
           <div class="about__inner about-inner">
@@ -124,7 +153,7 @@
           </div>
         </div>
       </section>
-      <section class="why">
+      <section class="why section-mb">
         <div class="container">
           <h2 class="title">Чому ми?</h2>
           <p class="why__text subtitle">
@@ -147,7 +176,7 @@
           </div>
         </div>
       </section>
-      <section class="projects">
+      <section class="projects section-sm">
         <div class="container">
           <h2 class="title">Наші проекти</h2>
           <p class="projects__text subtitle">
@@ -202,7 +231,7 @@
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services section-mb">
         <div class="container">
           <h2 class="title">Послуги</h2>
           <p class="subtitle services__subtitle">
@@ -245,7 +274,7 @@
           </ul>
         </div>
       </section>
-      <section class="prices">
+      <section class="prices section-mb">
         <div class="container">
           <h2 class="title">Тарифи і ціни</h2>
           <p class="subtitle prices__subtitle">
@@ -291,7 +320,7 @@
           </div>
         </div>
       </section>
-      <section class="workflow">
+      <section class="workflow section-mb">
         <div class="container">
           <h2 class="title">Як ми працюємо</h2>
           <ol class="workflow__list">
@@ -303,7 +332,7 @@
           </ol>
         </div>
       </section>
-      <section class="team">
+      <section class="team section-mb">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <p class="team__subtitle subtitle">
@@ -368,7 +397,7 @@
           </div>
         </div>
       </section>
-      <section class="questions">
+      <section class="questions section-sm">
         <div class="container">
           <h2 class="title">Часті питання</h2>
           <div class="questions__accordion accordion">
@@ -442,7 +471,7 @@
           </div>
         </div>
       </section>
-      <section class="details">
+      <section class="details section-mb">
         <div class="container">
           <div class="details__inner">
             <div class="details__content">
@@ -472,14 +501,11 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews section-mb">
         <div class="container">
           <h2 class="title">Відгуки</h2>
-          <!-- Slider main container -->
           <div class="reviews__swiper swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
               <div class="swiper-slide reviews__slide">
                 <p class="reviews__slide-name">
                   <img
@@ -572,7 +598,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts section-mb">
         <div class="container">
           <h2 class="title">Контакти</h2>
           <div class="contacts__inner">
@@ -602,8 +628,9 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer class="footer">
+    </main> 
+
+ <footer class="footer">
       <div class="container footer__container">
         <div class="footer__left">
           <nav class="menu footer-menu">
@@ -668,7 +695,7 @@
           <p class="footer__text">Реалізуйте Ваші зелені мрії з нами</p>
         </div>
       </div>
-    </footer>
+    </footer>  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
