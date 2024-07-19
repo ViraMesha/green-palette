@@ -1,0 +1,25 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 478px;
+  min-width: 195px;
+  min-height: 64px;
+  padding: 20px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  background-color: var(--accent-bg-color);
+
+  cursor: pointer;
+  transition: color var(--transition), background-color var(--transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--main-txt-cl);
+    color: var(--accent-bg-color);
+  }
+}

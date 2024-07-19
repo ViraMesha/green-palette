@@ -1,47 +1,47 @@
 :root {
   /* fonts */
-  --main-font: "Inter", sans-serif;
+  /* --main-font: "Inter", sans-serif;
   --secondary-font: "Balsamiq Sans", sans-serif;
-  --third-font: "Kaisei Decol", sans-serif;
+  --third-font: "Kaisei Decol", sans-serif; */
 
   /* text-colors */
-  --main-txt-cl: #0c3e2e;
+  /* --main-txt-cl: #0c3e2e;
   --secondary-txt-cl: #bb8a52;
   --placeholder-text-cl: #d9d9d9;
-  --third-txt-cl: #cc2e2e;
+  --third-txt-cl: #cc2e2e; */
 
   /* bg-colors */
-  --accent-bg-color: #ffba00;
-  --footer-bg-color: rgba(109, 151, 115, 0.1);
+  /* --accent-bg-color: #ffba00;
+  --footer-bg-color: rgba(109, 151, 115, 0.1); */
 
   /* others */
 }
 
-body {
+/* body {
   font-family: var(--main-font);
   font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
   color: var(--main-txt-cl);
-}
+} */
 
-.container {
+/* .container {
   max-width: 1240px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-}
+} */
 
-.section-mb,
+/* .section-mb,
 .header {
   margin-bottom: 150px;
 }
 
 .section-sm {
   margin-bottom: 110px;
-}
+} */
 
-.title {
+/* .title {
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 50px;
@@ -51,7 +51,7 @@ body {
   font-weight: 600;
   font-size: 28px;
   max-width: 70%;
-}
+} */
 
 /*
   |==============================
