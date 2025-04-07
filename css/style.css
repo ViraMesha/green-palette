@@ -79,7 +79,7 @@
   justify-content: space-between;
 } */
 
-.menu__btn {
+/* .menu__btn {
   display: none;
 }
 
@@ -98,15 +98,15 @@
 
 .phone {
   color: var(--secondary-txt-cl);
-}
+} */
 
 /*
   |==============================
-  | HEADER CONTENT
+  | HERO
   |==============================
 */
 
-.header-content__inner {
+/* .header-content__inner {
   display: flex;
   column-gap: 22px;
   align-items: center;
@@ -155,7 +155,7 @@
 
 .header-content__text-mob {
   display: none;
-}
+} */
 
 /*
   |==============================
@@ -163,11 +163,11 @@
   |==============================
 */
 
-.main {
+/* .main {
   background-image: url(../images/decor.png);
   background-repeat: no-repeat;
   background-position: bottom center;
-}
+} */
 
 /*
   |==============================
