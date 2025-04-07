@@ -283,4 +283,33 @@ select {
   font-weight: 600;
   font-size: 28px;
   max-width: 70%;
+}
+
+.header {
+  background-image: url("../images/header/header-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+.header__container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-top {
+  padding: 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
