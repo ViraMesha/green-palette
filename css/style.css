@@ -175,7 +175,7 @@
   |==============================
 */
 
-.about-inner {
+/* .about-inner {
   display: flex;
   column-gap: 22px;
   align-items: center;
@@ -218,7 +218,7 @@
 
 .about-inner__content--mob {
   display: none;
-}
+} */
 
 /*
   |==============================

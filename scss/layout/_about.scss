@@ -1,0 +1,45 @@
+.about-inner {
+  display: flex;
+  column-gap: 22px;
+  align-items: center;
+
+  &__img {
+    flex: 0 1 50%;
+  }
+  &__box {
+    flex: 1 1 50%;
+  }
+  &__text {
+    max-width: 506px;
+    margin-bottom: 30px;
+  }
+
+  &__text span {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    color: var(--secondary-txt-cl);
+    text-align: center;
+  }
+
+  &__list dt {
+    margin-bottom: 5px;
+    font-size: 48px;
+    font-weight: 600;
+  }
+
+  &__content--mob {
+    display: none;
+  }
+}
