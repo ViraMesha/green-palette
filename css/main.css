@@ -522,4 +522,30 @@ select {
   border-radius: 40px;
   border: 1px solid var(--accent-bg-color);
   max-width: 100%;
+}
+
+.services {
+  background-color: rgba(109, 151, 115, 0.1);
+  padding-bottom: 39px;
+  padding-top: 21px;
+}
+.services__subtitle {
+  margin-bottom: 30px;
+}
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  padding: 0 25px;
+  text-align: center;
+}
+.services__img {
+  margin-bottom: 20px;
+}
+.services__text {
+  font-size: 24px;
 }/*# sourceMappingURL=main.css.map */
