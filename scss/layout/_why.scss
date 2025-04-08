@@ -1,0 +1,39 @@
+.why {
+  &__text {
+    margin-bottom: 40px;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 33px;
+  }
+
+  &__list {
+    font-weight: 600;
+    font-size: 28px;
+    list-style-type: none;
+    counter-reset: my-counter;
+  }
+
+  &__item::before {
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    padding-right: 11px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 55px;
+  }
+  /* .why__item + .why__item {
+        margin-top: 55px;
+      } */
+
+  &__item.pl--70 {
+    padding-left: 70px;
+  }
+
+  &__item.pl--103 {
+    padding-left: 103px;
+  }
+}

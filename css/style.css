@@ -226,7 +226,7 @@
   |==============================
 */
 
-.why__text {
+/* .why__text {
   margin-bottom: 40px;
 }
 .why__content {
@@ -251,18 +251,18 @@
 
 .why__item:not(:last-child) {
   margin-bottom: 55px;
-}
+} */
 /* .why__item + .why__item {
   margin-top: 55px;
 } */
 
-.why__item.pl--70 {
+/* .why__item.pl--70 {
   padding-left: 70px;
 }
 
 .why__item.pl--103 {
   padding-left: 103px;
-}
+} */
 
 /*
   |==============================
@@ -270,7 +270,7 @@
   |==============================
 */
 
-.projects__text {
+/* .projects__text {
   max-width: 593px;
   margin-bottom: 30px;
 }
@@ -293,7 +293,7 @@
 .gallery-projects__img {
   border-radius: 40px;
   border: 1px solid var(--accent-bg-color);
-}
+} */
 
 /*
   |==============================
@@ -782,6 +782,16 @@
     font-size: 24px;
     font-weight: 500;
   }
+
+  /*
+  |==============================
+  | PROJECTS
+  |==============================
+*/
+
+  .gallery-projects {
+    column-gap: 10px;
+  }
 }
 
 @media (max-width: 965px) {
@@ -995,6 +1005,26 @@
   .why__item.pl--103 {
     padding-left: 74px;
   }
+
+  /*
+  |==============================
+  | PROJECTS
+  |==============================
+*/
+
+  .projects__text {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .gallery__item {
+    display: none;
+  }
+
+  .gallery-projects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -1096,6 +1126,40 @@
   .why__item.pl--103 {
     padding-left: 28px;
   }
+
+  /*
+    |==============================
+    | PROJECTS
+    |==============================
+  */
+
+  .projects__text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .gallery-projects {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+  }
+
+  .gallery-projects__item:not(.gallery__item) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery-projects__item img {
+    order: -1;
+  }
+
+  .gallery-projects__text {
+    font-size: 18px;
+  }
+
+  .gallery-projects__img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 360px) {
@@ -1106,6 +1170,11 @@
   */
   .title {
     font-size: 24px;
+    font-weight: 500;
+  }
+
+  .section-mb {
+    margin-bottom: 50px;
   }
 
   .header-content__title {

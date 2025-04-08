@@ -1,0 +1,31 @@
+.projects {
+  &__text {
+    width: 50%;
+    max-width: 593px;
+    margin-bottom: 30px;
+  }
+}
+
+.gallery {
+  &-projects {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  &__item {
+    grid-area: span 2;
+  }
+
+  &-projects__text {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  &-projects__img {
+    border-radius: 40px;
+    border: 1px solid var(--accent-bg-color);
+    max-width: 100%;
+  }
+}

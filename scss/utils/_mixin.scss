@@ -1,0 +1,35 @@
+@mixin mq($range) {
+  $mob: 480px;
+  $tab: 768px;
+  $desk: 1200px;
+
+  @if $range ==mob {
+    @media screen and (min-width: $mob) {
+      @content;
+    }
+  } @else if $range ==mob-only {
+    @media (max-width:#{$tab - 0.02}) {
+      @content;
+    }
+  } @else if $range ==tab {
+    @media screen and (min-width: $tab) {
+      @content;
+    }
+  } @else if $range ==tab-only {
+    @media (min-width:$tab) and (max-width:#{$desk - 0.02}) {
+      @content;
+    }
+  } @else if $range ==desk {
+    @media screen and (min-width: $desk) {
+      @content;
+    }
+  } @else if $range ==noDesk {
+    @media (max-width:#{$desk - 0.02}) {
+      @content;
+    }
+  } @else if $range ==noMob {
+    @media (min-width:#{$tab - 0.02}) {
+      @content;
+    }
+  }
+}
