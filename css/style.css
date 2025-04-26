@@ -374,7 +374,7 @@
   |==============================
 */
 
-.workflow__list {
+/* .workflow__list {
   max-width: 1070px;
   display: flex;
   flex-wrap: wrap;
@@ -403,7 +403,7 @@
   position: absolute;
   left: 0;
   -webkit-text-stroke: 1px rgb(109, 151, 115);
-}
+} */
 
 /*
   |==============================
@@ -677,6 +677,23 @@
 
   .about-inner__list {
     column-gap: 25px;
+  }
+
+  /*
+    |==============================
+    | WORKFLOW
+    |==============================
+  */
+
+  .workflow__item::before {
+    font-size: 96px;
+  }
+  .workflow__list {
+    gap: 10px 12px;
+  }
+
+  .workflow__item {
+    padding-left: 25px;
   }
 }
 
@@ -1089,6 +1106,25 @@
   .prices-item__services {
     font-size: 18px;
   }
+
+  /*
+    |==============================
+    | WORKFLOW
+    |==============================
+  */
+
+  .workflow__item::before {
+    font-size: 64px;
+  }
+  .workflow__list {
+    gap: 20px 15px;
+  }
+
+  .workflow__item {
+    font-size: 18px;
+    padding-left: 40px;
+    line-height: 93px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -1303,5 +1339,24 @@
   .header-content__btn-mob {
     display: block;
     margin-top: 0;
+  }
+
+  /*
+    |==============================
+    | WORKFLOW
+    |==============================
+  */
+
+  .workflow__item::before {
+    font-size: 36px;
+  }
+  .workflow__list {
+    gap: 15px;
+  }
+
+  .workflow__item {
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 32px;
   }
 }

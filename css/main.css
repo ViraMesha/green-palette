@@ -622,4 +622,41 @@ select {
   text-align: center;
   background-color: var(--accent-bg-color);
   font-size: 20px;
+}
+
+.workflow__list {
+  max-width: 1070px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  counter-reset: my-counter;
+}
+
+.workflow__item {
+  font-size: 28px;
+  font-weight: 600;
+  position: relative;
+  line-height: 185px;
+  padding-left: 64px;
+}
+
+.workflow__item::before {
+  content: counter(my-counter, decimal-leading-zero);
+  counter-increment: my-counter;
+  font-size: 128px;
+  font-family: var(--third-font);
+  font-weight: 400;
+  color: rgba(109, 151, 115, 0.2);
+  stroke: 0.25 solid var(--main-txt-cl);
+  letter-spacing: -8px;
+  position: absolute;
+  left: 0;
+  -webkit-text-stroke: 1px rgb(109, 151, 115);
 }/*# sourceMappingURL=main.css.map */
