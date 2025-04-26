@@ -1,0 +1,39 @@
+.footer {
+  background-color: var(--footer-bg-color);
+  padding: 40px 0 47px;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 22px;
+}
+
+.footer__left {
+  margin: 0 auto;
+}
+
+.footer-menu {
+  margin-bottom: 18px;
+}
+
+.footer-menu__list {
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.socials__list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__right {
+  padding-left: 30px;
+}
+.footer__text {
+  font-size: 36px;
+  font-weight: 600;
+  max-width: 321px;
+  margin-top: 42px;
+}
