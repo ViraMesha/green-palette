@@ -411,7 +411,7 @@
   |==============================
 */
 
-.team__subtitle {
+/* .team__subtitle {
   max-width: 623px;
   margin-bottom: 84px;
 }
@@ -434,7 +434,7 @@
 .team-item__name {
   margin-top: 10px;
   margin-bottom: 15px;
-}
+} */
 
 /*
   |==============================
@@ -719,6 +719,20 @@
 
   .why__img {
     max-width: 470px;
+  }
+  /*
+    |==============================
+    | TEAM
+    |==============================
+  */
+
+  .team__subtitle {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .team__list {
+    gap: 40px;
   }
 }
 
@@ -1128,6 +1142,20 @@
 
   /*
     |==============================
+    | TEAM
+    |==============================
+  */
+  .team__subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .team__list {
+    gap: 20px 50px;
+  }
+
+  /*
+    |==============================
     | FOOTER
     |==============================
   */
@@ -1377,6 +1405,16 @@
     font-size: 14px;
     padding-left: 10px;
     line-height: 32px;
+  }
+
+  /*
+    |==============================
+    | TEAM
+    |==============================
+  */
+
+  .team-item__subscription {
+    font-size: 14px;
   }
 
   /*

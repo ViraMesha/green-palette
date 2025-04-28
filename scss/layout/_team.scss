@@ -1,0 +1,26 @@
+.team__subtitle {
+  max-width: 623px;
+  margin-bottom: 84px;
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.team-item {
+  max-width: 200px;
+}
+.team-item__img {
+  border: 1px solid var(--accent-bg-color);
+  width: 100%;
+}
+
+.team-item__name {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
