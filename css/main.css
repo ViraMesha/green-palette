@@ -293,6 +293,18 @@ select {
 
 .accordion__item {
   margin-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-transition: background-color 0.4s ease, -webkit-box-shadow 0.4s ease;
+  transition: background-color 0.4s ease, -webkit-box-shadow 0.4s ease;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease, -webkit-box-shadow 0.4s ease;
+}
+
+.accordion__item.accordion__item--active {
+  background-color: var(--accent-bg-color, #ffba00); /* Use your accent color */
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Lifted feel */
 }
 
 .accordion__title {
@@ -306,23 +318,53 @@ select {
   cursor: pointer;
   padding-right: 70px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 70px 20px 20px; /* Room for the icon */
+  color: var(--main-txt-cl, #0c3e2e);
 }
 
-.accordion__title::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  right: 40px;
-  background-image: url(../images/arrow-down.svg);
-  width: 15px;
+.accordion__icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 16px;
   height: 26px;
+  background-image: url("../images/arrow-down.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* On Active - rotate icon + recolor it */
+.accordion__item.accordion__item--active .accordion__icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(102%) contrast(102%);
+          filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(102%) contrast(102%);
+  /* This will make the SVG appear white */
 }
 
 .accordion__text {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 0.6s ease-in-out;
-  transition: max-height 0.6s ease-in-out;
+  padding: 0 20px;
+  -webkit-transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s ease;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s ease;
+  color: var(--main-txt-cl, #0c3e2e);
+}
+
+.accordion__item.accordion__item--active .accordion__text {
+  padding: 20px; /* Add padding inside when open */
 }
 
 .header {
