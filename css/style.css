@@ -442,7 +442,7 @@
   |==============================
 */
 
-.accordion {
+/* .accordion {
   column-count: 2;
   gap: 0 22px;
 }
@@ -474,7 +474,7 @@
 
 .accordion__text {
   display: none;
-}
+} */
 
 /*
   |==============================

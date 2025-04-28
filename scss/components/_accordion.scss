@@ -1,0 +1,39 @@
+.accordion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 22px;
+}
+.accordion__item {
+  margin-bottom: 40px;
+}
+
+.accordion__title {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  padding-right: 70px;
+  position: relative;
+}
+
+.accordion__title::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 40px;
+  background-image: url(../images/arrow-down.svg);
+  width: 15px;
+  height: 26px;
+}
+
+.accordion__text {
+  display: none;
+}
+
+.accordion__item.accordion__item--active .accordion__text {
+  display: block;
+}
