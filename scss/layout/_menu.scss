@@ -46,6 +46,26 @@
   }
 }
 
+.logo {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
 .phone {
   color: var(--secondary-txt-cl);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.phone:hover {
+  color: var(
+    --third-txt-cl
+  ); /* your bright red color for a call-to-action effect */
+  text-decoration: underline;
+  transform: translateY(-2px);
 }

@@ -445,8 +445,32 @@ select {
   color: var(--secondary-txt-cl); /* change text color on hover */
 }
 
+.logo {
+  display: inline-block;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.9;
+}
+
 .phone {
   color: var(--secondary-txt-cl);
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.phone:hover {
+  color: var(--third-txt-cl); /* your bright red color for a call-to-action effect */
+  text-decoration: underline;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .header-content__inner {
