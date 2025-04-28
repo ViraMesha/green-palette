@@ -31,9 +31,7 @@
 }
 
 .accordion__text {
-  display: none;
-}
-
-.accordion__item.accordion__item--active .accordion__text {
-  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in-out;
 }
