@@ -821,6 +821,15 @@
   .services__text {
     font-size: 20px;
   }
+
+  /*
+    |==============================
+    | ACCORDION
+    |==============================
+  */
+  .accordion__item {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 965px) {
@@ -1156,6 +1165,24 @@
 
   /*
     |==============================
+    | ACCORDION
+    |==============================
+  */
+
+  .accordion__item {
+    margin-bottom: 20px;
+  }
+
+  .accordion__title {
+    font-size: 18px;
+  }
+
+  .accordion__text {
+    font-size: 14px;
+  }
+
+  /*
+    |==============================
     | FOOTER
     |==============================
   */
@@ -1180,6 +1207,15 @@
 
   .why__item.pl--103 {
     padding-left: 44px;
+  }
+
+  /*
+    |==============================
+    | ACCORDION
+    |==============================
+  */
+  .accordion {
+    display: block;
   }
 }
 
@@ -1415,6 +1451,20 @@
 
   .team-item__subscription {
     font-size: 14px;
+  }
+
+  /*
+    |==============================
+    | ACCORDION
+    |==============================
+  */
+
+  .accordion__title {
+    font-size: 14px;
+  }
+
+  .accordion__text {
+    font-size: 12px;
   }
 
   /*
