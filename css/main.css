@@ -249,8 +249,8 @@ select {
   line-height: 1.2;
   background-color: var(--accent-bg-color);
   cursor: pointer;
-  -webkit-transition: color var(--transition), background-color var(--transition);
-  transition: color var(--transition), background-color var(--transition);
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 .btn:hover, .btn:focus {
   background-color: var(--main-txt-cl);
@@ -1025,4 +1025,33 @@ select {
   right: 50%;
   -webkit-transform: translateX(65px);
           transform: translateX(65px);
+}
+
+.contacts__inner {
+  display: grid;
+  gap: 70px 22px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
+}
+
+.contacts__images {
+  grid-row: 1/-1;
+}
+
+.contacts__img {
+  width: 100%;
+  height: 456px;
+}
+
+.contacts__info {
+  font-size: 20px;
+  grid-column: 2/3;
+}
+
+.contacts__info dd {
+  margin-bottom: 20px;
+}
+
+.contacts__btn {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
