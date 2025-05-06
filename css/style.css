@@ -557,7 +557,7 @@
   |==============================
 */
 
-.reviews__swiper {
+/* .reviews__swiper {
   padding-bottom: 55px;
   font-size: 24px;
 }
@@ -590,7 +590,7 @@
 .reviews__arrow-next {
   right: 50%;
   transform: translateX(65px);
-}
+} */
 
 /*
   |==============================
@@ -1275,6 +1275,18 @@
   .accordion__text {
     font-size: 14px;
   }
+
+  /*
+    |==============================
+    | REVIEWS
+    |==============================
+  */
+
+  .reviews__slide__desc,
+  .reviews__slide-name {
+    font-size: 18px;
+  }
+
   /*
     |==============================
     | FOOTER
@@ -1590,6 +1602,19 @@
 
   .details__image--mob3 {
     height: 190px;
+  }
+
+  /*
+    |==============================
+    | REVIEWS
+    |==============================
+  */
+
+  .reviews__slide__desc {
+    font-size: 14px;
+  }
+  .reviews__slide-name {
+    font-size: 16px;
   }
 
   /*

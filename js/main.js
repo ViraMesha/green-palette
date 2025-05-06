@@ -1,9 +1,21 @@
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 2,
+  grid: {
+    rows: 2,
+    fill: "row",
+  },
+  slidesPerView: 1,
   spaceBetween: 22,
   navigation: {
     nextEl: ".reviews__arrow-next",
     prevEl: ".reviews__arrow-prev",
+  },
+  breakpoints: {
+    640: {
+      grid: {
+        rows: 1,
+      },
+      slidesPerView: 2,
+    },
   },
   loop: true,
 });
