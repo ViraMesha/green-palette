@@ -369,6 +369,70 @@ select {
   padding: 20px; /* Add padding inside when open */
 }
 
+.form__input {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  border: none;
+  border-bottom: 1px solid var(--main-txt-cl);
+  padding: 5px 10px;
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 24px;
+  background-color: transparent;
+}
+
+.form__input::-webkit-input-placeholder {
+  font-size: 24px;
+  color: var(--placeholder-text-cl);
+}
+
+.form__input::-moz-placeholder {
+  font-size: 24px;
+  color: var(--placeholder-text-cl);
+}
+
+.form__input:-ms-input-placeholder {
+  font-size: 24px;
+  color: var(--placeholder-text-cl);
+}
+
+.form__input::-ms-input-placeholder {
+  font-size: 24px;
+  color: var(--placeholder-text-cl);
+}
+
+.form__input::placeholder {
+  font-size: 24px;
+  color: var(--placeholder-text-cl);
+}
+
+.form__btn {
+  font-size: 20px;
+  background-color: var(--accent-bg-color);
+  border: 1px solid transparent;
+  padding: 20px;
+  min-width: 195px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.form__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 31px;
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.form__link span {
+  border-bottom: 1px solid var(--main-txt-cl);
+}
+
 .header {
   background-image: url("../images/header/header-bg.svg");
   background-repeat: no-repeat;
@@ -878,4 +942,46 @@ select {
   font-weight: 600;
   max-width: 321px;
   margin-top: 42px;
+}
+
+.details__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0 39px;
+}
+
+.details__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.details__text {
+  margin: 15px 0;
+}
+
+.details__form {
+  padding-left: 26px;
+}
+
+.details__images {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.details__images img {
+  border-radius: 40px;
+  border: 1px solid var(--accent-bg-color);
+}
+
+.details__images img:nth-child(3) {
+  grid-column: 1/-1;
 }/*# sourceMappingURL=main.css.map */

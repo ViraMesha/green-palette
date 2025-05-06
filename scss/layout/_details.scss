@@ -1,0 +1,31 @@
+.details__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 39px;
+}
+.details__content {
+  flex: 0 1 50%;
+}
+
+.details__text {
+  margin: 15px 0;
+}
+.details__form {
+  padding-left: 26px;
+}
+
+.details__images {
+  flex: 0 1 50%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.details__images img {
+  border-radius: 40px;
+  border: 1px solid var(--accent-bg-color);
+}
+
+.details__images img:nth-child(3) {
+  grid-column: 1 / -1;
+}

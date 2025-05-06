@@ -1,0 +1,38 @@
+.form__input {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  border: none;
+  border-bottom: 1px solid var(--main-txt-cl);
+  padding: 5px 10px;
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 24px;
+  background-color: transparent;
+}
+
+.form__input::placeholder {
+  font-size: 24px;
+  color: var(--placeholder-text-cl);
+}
+
+.form__btn {
+  font-size: 20px;
+  background-color: var(--accent-bg-color);
+  border: 1px solid transparent;
+  padding: 20px;
+  min-width: 195px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.form__link {
+  display: flex;
+  align-items: center;
+  gap: 0 31px;
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.form__link span {
+  border-bottom: 1px solid var(--main-txt-cl);
+}
