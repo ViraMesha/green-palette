@@ -896,6 +896,10 @@ select {
   margin-bottom: 15px;
 }
 
+.team__arrow {
+  display: none;
+}
+
 .footer {
   background-color: var(--footer-bg-color);
   padding: 40px 0 47px;
@@ -1009,19 +1013,22 @@ select {
   border-radius: 50%;
 }
 
-.reviews__arrow {
+.reviews__arrow,
+.team__arrow {
   position: absolute;
   bottom: 0;
   cursor: pointer;
 }
 
-.reviews__arrow-prev {
+.reviews__arrow-prev,
+.team__arrow-prev {
   left: 50%;
   -webkit-transform: translateX(-65px);
           transform: translateX(-65px);
 }
 
-.reviews__arrow-next {
+.reviews__arrow-next,
+.team__arrow-next {
   right: 50%;
   -webkit-transform: translateX(65px);
           transform: translateX(65px);

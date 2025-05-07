@@ -956,8 +956,21 @@
     |==============================
   */
 
+  .team__inner {
+    padding-left: 140px;
+    padding-bottom: 35px;
+  }
+  .team__list {
+    flex-wrap: nowrap;
+    gap: 20px 40px;
+  }
+
   .team-item__subscription {
     font-size: 14px;
+  }
+
+  .team__arrow {
+    display: block;
   }
 
   /*

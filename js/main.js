@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".reviews__swiper", {
   grid: {
     rows: 2,
     fill: "row",
@@ -18,6 +18,22 @@ const swiper = new Swiper(".swiper", {
     },
   },
   loop: true,
+});
+const swiperTeam = new Swiper(".team__inner", {
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".team__arrow-next",
+        prevEl: ".team__arrow-prev",
+      },
+      loop: true,
+    },
+  },
+  361: {
+    slidesPerView: 0,
+  },
 });
 
 const menuBtn = document.querySelector(".menu__btn");
