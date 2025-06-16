@@ -129,7 +129,14 @@ sr.reveal(".header__text", revealWithShortDistance);
 
 // titles
 sr.reveal(".title", revealWithDelay);
+// subtitles
+sr.reveal(".subtitle", revealFromTop);
 
 // about
 sr.reveal(".about-inner__img", revealFromLeft);
 sr.reveal(".about-inner__box", revealFromRight);
+
+// why
+sr.reveal(".why__img", revealFromLeft);
+sr.reveal(".why__list", revealFromRight);
+sr.reveal(".why__item", revealWithInterval);
