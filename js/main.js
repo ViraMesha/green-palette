@@ -154,5 +154,8 @@ sr.reveal(".prices__list--right", revealFromRight);
 // workflow
 sr.reveal(".workflow__item", revealWithInterval);
 
+// team
+sr.reveal(".team__item ", revealWithInterval);
+
 // questions
 sr.reveal(".accordion__item", revealWithInterval);
