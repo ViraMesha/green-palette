@@ -146,3 +146,7 @@ sr.reveal(".gallery-projects__item", revealWithInterval);
 
 // services
 sr.reveal(".services__item", revealWithInterval);
+
+// prices
+sr.reveal(".prices__list--left", revealFromLeft);
+sr.reveal(".prices__list--right", revealFromRight);
