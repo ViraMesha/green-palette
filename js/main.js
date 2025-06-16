@@ -88,9 +88,10 @@ accordionTitles.forEach((title) => {
 const sr = ScrollReveal({
   origin: "bottom",
   distance: "60px",
-  duration: 3000,
+  duration: 1200,
   delay: 600,
-  reset: true,
+  reset: false,
+  easing: "ease-out",
 });
 
 // custom configurations for specific elements
@@ -99,26 +100,26 @@ const revealFromTop = {
 };
 
 const revealWithInterval = {
-  distance: "100px",
+  distance: "40px",
   interval: 100,
 };
 
 const revealFromLeft = {
   origin: "left",
-  distance: "100px",
+  distance: "40px",
 };
 
 const revealFromRight = {
   origin: "right",
-  distance: "100px",
+  distance: "40px",
 };
 
 const revealWithShortDistance = {
-  distance: "60px",
+  distance: "30px",
 };
 
 const revealWithDelay = {
-  distance: "100px",
+  distance: "40px",
   delay: 400,
 };
 
@@ -170,3 +171,7 @@ sr.reveal(".details__image", revealWithInterval);
 sr.reveal(".reviews__slide", revealWithInterval);
 sr.reveal(".reviews__arrow-prev", revealFromLeft);
 sr.reveal(".reviews__arrow-next", revealFromRight);
+
+// contacts
+sr.reveal(".contacts__images");
+sr.reveal(".contacts__info", revealFromTop);
