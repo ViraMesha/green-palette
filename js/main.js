@@ -83,3 +83,46 @@ accordionTitles.forEach((title) => {
     }
   }
 });
+
+// scroll reveal
+const sr = ScrollReveal({
+  origin: "bottom",
+  distance: "60px",
+  duration: 3000,
+  delay: 600,
+  reset: true,
+});
+
+// custom configurations for specific elements
+const revealFromTop = {
+  origin: "top",
+};
+
+const revealWithInterval = {
+  distance: "100px",
+  interval: 100,
+};
+
+const revealFromLeft = {
+  origin: "left",
+  distance: "100px",
+};
+
+const revealFromRight = {
+  origin: "right",
+  distance: "100px",
+};
+
+const revealWithShortDistance = {
+  distance: "60px",
+};
+
+const revealWithDelay = {
+  distance: "100px",
+  delay: 400,
+};
+
+// hero
+sr.reveal(".header-content__box", revealFromTop);
+sr.reveal(".header-content__img");
+sr.reveal(".header__text", revealWithShortDistance);
