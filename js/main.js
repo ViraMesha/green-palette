@@ -140,3 +140,6 @@ sr.reveal(".about-inner__box", revealFromRight);
 sr.reveal(".why__img", revealFromLeft);
 sr.reveal(".why__list", revealFromRight);
 sr.reveal(".why__item", revealWithInterval);
+
+// projects
+sr.reveal(".gallery-projects__item", revealWithInterval);
