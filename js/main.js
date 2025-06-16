@@ -150,3 +150,6 @@ sr.reveal(".services__item", revealWithInterval);
 // prices
 sr.reveal(".prices__list--left", revealFromLeft);
 sr.reveal(".prices__list--right", revealFromRight);
+
+// workflow
+sr.reveal(".workflow__item", revealWithInterval);
