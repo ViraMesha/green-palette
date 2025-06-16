@@ -143,3 +143,6 @@ sr.reveal(".why__item", revealWithInterval);
 
 // projects
 sr.reveal(".gallery-projects__item", revealWithInterval);
+
+// services
+sr.reveal(".services__item", revealWithInterval);
