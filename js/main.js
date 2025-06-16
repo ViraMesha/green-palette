@@ -159,3 +159,9 @@ sr.reveal(".team__item ", revealWithInterval);
 
 // questions
 sr.reveal(".accordion__item", revealWithInterval);
+
+// details
+sr.reveal(".details__text", revealFromTop);
+sr.reveal(".details__form", revealFromTop);
+sr.reveal(".form__link", revealFromTop);
+sr.reveal(".details__image", revealWithInterval);
