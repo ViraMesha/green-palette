@@ -165,3 +165,8 @@ sr.reveal(".details__text", revealFromTop);
 sr.reveal(".details__form", revealFromTop);
 sr.reveal(".form__link", revealFromTop);
 sr.reveal(".details__image", revealWithInterval);
+
+// reviews
+sr.reveal(".reviews__slide", revealWithInterval);
+sr.reveal(".reviews__arrow-prev", revealFromLeft);
+sr.reveal(".reviews__arrow-next", revealFromRight);
