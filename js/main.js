@@ -126,3 +126,10 @@ const revealWithDelay = {
 sr.reveal(".header-content__box", revealFromTop);
 sr.reveal(".header-content__img");
 sr.reveal(".header__text", revealWithShortDistance);
+
+// titles
+sr.reveal(".title", revealWithDelay);
+
+// about
+sr.reveal(".about-inner__img", revealFromLeft);
+sr.reveal(".about-inner__box", revealFromRight);
